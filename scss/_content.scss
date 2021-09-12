@@ -1,0 +1,131 @@
+.content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #F7F7F7;
+}
+
+.content__text h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 68px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #232222;
+    padding-bottom: 25px;
+}
+
+.content__text p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 163.9%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #232222;
+    padding-bottom: 55px;
+}
+
+.content__carts {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cart {
+    width: 24%;
+    height: 400px;
+    box-shadow: 12px 18px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.cart:hover {
+    box-shadow: 12px 18px 30px rgba(0, 0, 0, 0.4);
+}
+
+.cart img {
+    display: inline;
+    max-width: 100%;
+}
+
+.cart h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 141.9%;
+    /* or 45px */
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #232222;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.cart__active{
+    background: linear-gradient(132.95deg, #FFC301 9.31%, #FF6533 79.4%);
+    box-shadow: 12px 18px 30px rgba(0, 0, 0, 0.08);
+}
+
+.cart__active h1{
+    color: white !important;
+}
+
+// media__queries
+
+@media (max-width: 1376px){
+    .cart h1 {
+        margin-top: 14px;
+        font-size: 29px;
+    }
+}
+
+@media (max-width: 1024px){
+    .cart {
+        height: 315px;
+    }
+}
+
+@media (max-width: 768px){
+    .otstup {
+        display: none;
+    }
+
+    .content__text h1 {
+        font-size: 37px;
+        line-height: 52px;
+    }
+
+    .cart {
+        height: 265px;
+    }
+
+    .cart h1 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px){
+    .content__carts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart img{
+        max-width: 100%;
+    }
+
+    .cart {
+        width: 72%;
+        margin-bottom: 50px;
+        height: 382px;
+    }
+
+    .cart h1 {
+        font-size: 29px;
+    }
+}

@@ -1,0 +1,141 @@
+.info__text {
+    margin-top: 16px;
+    padding-bottom: 55px;
+}
+
+.info__text h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 68px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #232222;
+    padding-bottom: 24px;
+}
+
+.info__text p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 163.9%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #232222;
+}
+
+.info__cart-selector {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.cart2 {
+    width: 24.5%;
+    height: 412px;
+    background: #F4F4F4;
+    box-shadow: 12px 18px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+.cart2 img {
+    display: inline;
+    max-width: 100%;
+    transition: all .5s ease;
+}
+
+.cart2:hover img{
+    max-width: 120%;
+}
+
+.cart2:hover {
+    box-shadow: 12px 18px 30px rgba(0, 0, 0, 0.9);
+}
+
+.cart2 h1 {
+    overflow: hidden;
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 175.4%;
+    letter-spacing: 0.02em;
+    color: #232222;
+    margin-left: 29px;
+}
+
+.cart__money {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+    margin-bottom: 28px;
+    margin-left: 33px;
+}
+
+.cart__money img {
+    margin-right: 16px;
+}
+
+.cart__money p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 175.4%;
+    letter-spacing: 0.02em;
+    color: #FF8E1E;
+}
+
+.cart__user {
+    display: flex;
+    align-items: center;;
+    margin-left: 33px;
+}
+
+.cart__user img {
+    margin-right: 17px;
+}
+
+.cart__user p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 175.4%;
+    letter-spacing: 0.02em;
+    color: #232222;
+}
+
+// media__queries
+
+@media (max-width: 1024px){
+    .cart2 h1 {
+        font-size: 14px;
+    }
+
+    .info__cart-selector {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart2 {
+        width: 82%;
+        height: 412px;
+        background: #F4F4F4;
+        box-shadow: 12px 18px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        overflow: hidden;
+        transition: all .3s ease;
+        margin-bottom: 20px;
+    }
+    
+    .cart2 img {
+        max-width: 100%;
+        transition: all .5s ease;
+    }
+}

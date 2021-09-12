@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+@media (max-width: 1376px){
+    .container{
+        width: 1124px;
+    }
+}
+
+
+@media (max-width: 1240px){
+    .container{
+        width: 1024px;
+    }
+}
+
+@media (max-width: 1024px){
+    .container{
+        width: 768px;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 568px;
+    }
+}
+
+@media (max-width: 568px){
+    .container{
+        width: 480px;
+    }
+}
+
+@media (max-width: 480px){
+    .container{
+        width: 380px;
+    }
+}
+
+@media (max-width: 427px){
+    .container{
+        width: 300px;
+    }
+}
+
+
+
+
